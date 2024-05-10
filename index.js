@@ -5,4 +5,11 @@ app.get('/', function (req, res) {
   res.send('Hello World')
 })
 
-app.listen(3000)
+//andpont /oi = Olá mundo mn
+app.get('/oi', function (req, res) {
+  res.send('Olá Mundo mn')
+})
+
+app.listen(3000, function (){
+  console.log("Aplicação Rodando em http://localhost:3000")
+})
